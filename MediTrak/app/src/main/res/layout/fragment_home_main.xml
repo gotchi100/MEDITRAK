@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment.HomeMainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txtGreet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="TextView"
+            android:textColor="@color/fg_secondary"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toStartOf="@+id/imgHomeHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="TextView"
+            android:textColor="@color/fg_main"
+            android:textSize="31sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imgHomeHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtGreet" />
+
+        <ImageView
+            android:id="@+id/imgHomeHeader"
+            android:layout_width="76dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/ic_morning"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/btn_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+        <ImageView
+            android:id="@+id/ivMeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_pill"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/txtMedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/home_meds"
+            android:textColor="@color/fg_secondary"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/ivMeds"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/txtViewMeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/btn_primary"
+            android:backgroundTintMode="src_over"
+            android:fontFamily="@font/raleway"
+            android:paddingLeft="10sp"
+            android:paddingTop="5sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="5sp"
+            android:text="@string/home_see_all"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/txtMedLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtMedLabel" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMeds"
+            android:layout_width="0dp"
+            android:layout_height="225dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMedLabel" />
+
+
+        <ImageView
+            android:id="@+id/ivSched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_schedule"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvMeds" />
+
+        <TextView
+            android:id="@+id/txtSchedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/home_sched"
+            android:textColor="@color/fg_secondary"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/ivSched"
+            app:layout_constraintTop_toBottomOf="@+id/rvMeds" />
+
+        <TextView
+            android:id="@+id/txtViewSched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/btn_primary"
+            android:backgroundTintMode="src_over"
+            android:fontFamily="@font/raleway"
+            android:paddingLeft="10sp"
+            android:paddingTop="5sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="5sp"
+            android:text="@string/home_see_all"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/txtSchedLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtSchedLabel" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvScheds"
+            android:layout_width="0dp"
+            android:layout_height="225dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSchedLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data.MedicineActivity">
+
+    <TextView
+        android:id="@+id/txtMedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textColor="@color/fg_main"
+        android:textSize="18sp"
+        android:transitionName="transition_med_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMedStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textColor="@color/fg_hint"
+        android:textSize="14sp"
+        android:transitionName="transition_med_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMedName" />
+
+    <TextView
+        android:id="@+id/txtMedQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textColor="@color/fg_main"
+        android:textSize="18sp"
+        android:transitionName="transition_med_qty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMedInitial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textColor="@color/fg_hint"
+        android:textSize="14sp"
+        android:transitionName="transition_med_initial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMedQuantity" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/nav_schedule"
+        android:textColor="@color/fg_main"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddSchedInMed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAddSchedInMed" />
+
+    <Button
+        android:id="@+id/btnAddSchedInMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/btn_add"
+        app:icon="@drawable/ic_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMedInitial" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSchedules"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRefill"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddSchedInMed" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/danger"
+        android:text="@string/btn_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRefill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/btn_primary_variant"
+        android:text="@string/btn_refill"
+        app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

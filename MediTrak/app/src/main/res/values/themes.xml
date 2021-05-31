@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MediTrak" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/btn_primary</item>
+        <item name="colorPrimaryVariant">@color/btn_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/btn_secondary</item>
+        <item name="colorSecondaryVariant">@color/btn_secondary_variant</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:colorBackground">@color/bg_main</item>
+        <item name="android:textColor">@color/fg_main</item>
+        <item name="editTextColor">@color/fg_main</item>
+        <item name="android:textColorHint">@color/fg_hint</item>
+
+        <item name="android:fontFamily">@font/raleway</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="android:background">@color/bg_main</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:background">@color/btn_secondary</item>
+        <item name="backgroundTint">@color/btn_secondary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginBottom">10sp</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:background">@color/btn_primary</item>
+        <item name="backgroundTint">@color/btn_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginBottom">5sp</item>
+    </style>
+</resources>

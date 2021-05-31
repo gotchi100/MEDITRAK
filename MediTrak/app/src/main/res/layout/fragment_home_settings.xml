@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    tools:context=".HomeFragment.HomeSettingsFragment">
+
+    <TextView
+        android:id="@+id/txtHomeSchedTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/nav_settings"
+        android:textColor="@color/fg_main"
+        android:textSize="29sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHomeSchedTitle">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:fontFamily="@font/raleway"
+            android:gravity="center_vertical"
+            android:text="@string/name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNameVal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/raleway"
+            android:gravity="center_vertical"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llContact"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llName">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:fontFamily="@font/raleway"
+            android:gravity="center_vertical"
+            android:text="@string/contact"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvContactVal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/raleway"
+            android:gravity="center_vertical"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/raleway"
+        android:text="@string/remind"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/rem5Min"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/remind_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/rem10Min"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/remind_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/rem5Min" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/rem15Min"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/remind_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/rem10Min" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="191dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llContact" />
+
+    <ImageView
+        android:id="@+id/imgHome"
+        android:layout_width="76dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ic_landing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/app_name"
+        android:textColor="@color/fg_main"
+        android:textSize="49sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgHome" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/danger"
+        android:text="@string/btn_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

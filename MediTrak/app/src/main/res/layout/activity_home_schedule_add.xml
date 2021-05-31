@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment.HomeSchedule.HomeScheduleAddActivity"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="191dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_calendar" />
+
+            <TextView
+                android:id="@+id/tvGreet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/playfair_display"
+                android:text="@string/sched_add_header"
+                android:textSize="29sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/sched_add_content"
+                android:textColor="@color/fg_secondary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGreet" />
+
+            <CheckBox
+                android:id="@+id/cbM"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/sched_m"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvContent" />
+
+            <CheckBox
+                android:id="@+id/cbTh"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/sched_th"
+                app:layout_constraintEnd_toEndOf="@+id/cbM"
+                app:layout_constraintStart_toStartOf="@+id/cbM"
+                app:layout_constraintTop_toBottomOf="@+id/cbM" />
+
+            <CheckBox
+                android:id="@+id/cbW"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/sched_w"
+                app:layout_constraintBottom_toBottomOf="@+id/cbT"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cbT" />
+
+            <CheckBox
+                android:id="@+id/cbS"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="@string/sched_s"
+                app:layout_constraintBottom_toBottomOf="@+id/cbF"
+                app:layout_constraintEnd_toEndOf="@+id/cbW"
+                app:layout_constraintStart_toStartOf="@+id/cbW"
+                app:layout_constraintTop_toTopOf="@+id/cbF" />
+
+            <CheckBox
+                android:id="@+id/cbT"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/sched_t"
+                app:layout_constraintBottom_toBottomOf="@+id/cbM"
+                app:layout_constraintEnd_toStartOf="@+id/cbW"
+                app:layout_constraintStart_toEndOf="@+id/cbM"
+                app:layout_constraintTop_toTopOf="@+id/cbM" />
+
+            <CheckBox
+                android:id="@+id/cbSu"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/sched_su"
+                app:layout_constraintEnd_toEndOf="@+id/cbF"
+                app:layout_constraintStart_toStartOf="@+id/cbF"
+                app:layout_constraintTop_toBottomOf="@+id/cbF" />
+
+            <CheckBox
+                android:id="@+id/cbF"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="@string/sched_f"
+                app:layout_constraintBottom_toBottomOf="@+id/cbTh"
+                app:layout_constraintEnd_toEndOf="@+id/cbT"
+                app:layout_constraintStart_toStartOf="@+id/cbT"
+                app:layout_constraintTop_toTopOf="@+id/cbTh" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/sched_add_content2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cbSu" />
+
+            <TextView
+                android:id="@+id/tvDosage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/sched_add_content3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnTime" />
+
+            <EditText
+                android:id="@+id/etDosage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:fontFamily="@font/playfair_display"
+                android:hint="@string/med_add_hint2"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDosage" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/sched_add_content4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDosage" />
+
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/btn_primary"
+                android:text="@string/btn_go"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/btn_secondary"
+                android:text="@string/btn_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/tvTimeVal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/playfair_display"
+                android:textSize="29sp"
+                app:layout_constraintEnd_toStartOf="@+id/btnTime"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+            <Button
+                android:id="@+id/btnTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="@string/btn_timer"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTimeVal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTimeVal" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

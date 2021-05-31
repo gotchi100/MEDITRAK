@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/txtMedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textColor="@color/fg_main"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:transitionName="transition_med_name"/>
+
+    <TextView
+        android:id="@+id/txtMedStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textColor="@color/fg_hint"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMedName"
+        android:transitionName="transition_med_status"/>
+
+    <TextView
+        android:id="@+id/txtMedQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textColor="@color/fg_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:transitionName="transition_med_qty"/>
+
+    <TextView
+        android:id="@+id/txtMedInitial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textColor="@color/fg_hint"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMedQuantity"
+        android:transitionName="transition_med_initial"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

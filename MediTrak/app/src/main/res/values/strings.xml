@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">MediTrak</string>
+    <string name="shared_pref">MediTrakPrefs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="btn_next">Next</string>
+    <string name="btn_register">Register Now!</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_go" formatted="true">Let\'s Go!</string>
+    <string name="btn_add" formatted="true">Add</string>
+    <string name="btn_delete" formatted="true">Delete</string>
+    <string name="btn_refill" formatted="true">Refill</string>
+    <string name="btn_timer" formatted="true">Select Time</string>
+    <string name="btn_edit" formatted="true">Edit</string>
+    <string name="btn_clear" formatted="true">Clear Everything</string>
+
+    <string name="search" formatted="true">Search</string>
+
+    <string-array name="home_greetings">
+        <item>Hey there</item>
+        <item>Hey</item>
+        <item>Hi</item>
+        <item>Ho there</item>
+        <item>Hello</item>
+    </string-array>
+    <string name="home_meds">Medicines</string>
+    <string name="home_sched">Schedules</string>
+    <string name="home_see_all">See All >> </string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_schedule">Schedule</string>
+    <string name="nav_medicines">Medicines</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="home_subtitle">Keep Your Health in <b>Trak</b>!</string>
+
+    <string name="register_header1">Hey There!</string>
+    <string name="register_content1">Before you start <b>MediTrakking</b>, why don\'t you tell us who you are first!</string>
+    <string name="register_hint1">My name is...</string>
+    <string name="register_header2">Great!</string>
+    <string name="register_content2"><b>MediTrak</b> let\'s your friends go <i>trakking</i> alongside you! How\'re we gonna call them?</string>
+    <string name="register_hint2">Their number is...</string>
+    <string name="register_header3">Got It!</string>
+    <string name="register_content3">You\'re all set! Just click the button below and you can start your <i>trak</i>!</string>
+
+    <string name="med_add_header">Hiya!</string>
+    <string name="med_add_content">Looks like you\'re about to add some new meds! Just follow the steps below!</string>
+    <string name="med_add_content1">First you gotta give the meds a name!</string>
+    <string name="med_add_hint1">Say my name, say my name...</string>
+    <string name="med_add_content2">Then you gotta tell me how much of <b>ME</b> should be added.</string>
+    <string name="med_add_hint2">How much?</string>
+    <string name="med_add_content3">All done! Now you just gotta click the add button to finish, make sure everything you put in here is right!</string>
+
+    <string name="med_refill_header">Hey!</string>
+    <string name="med_refill_content">You\'re about to refill your meds! Just follow the steps below!</string>
+    <string name="med_refill_content1">Make sure you got the right meds! Check the name below me!</string>
+    <string name="med_refill_content2">Now you gotta tell me how much of <b>ME</b> should be refilled.</string>
+    <string name="med_refill_hint2">How much?</string>
+    <string name="med_refill_content3">All done! Now you just gotta click the add button to finish, make sure everything you put in here is right!</string>
+
+    <string name="sched_m">Monday</string>
+    <string name="sched_t">Tuesday</string>
+    <string name="sched_w">Wednesday</string>
+    <string name="sched_th">Thursday</string>
+    <string name="sched_f">Friday</string>
+    <string name="sched_s">Saturday</string>
+    <string name="sched_su">Sunday</string>
+
+    <string name="sched_add_header">Whoah there!</string>
+    <string name="sched_add_content">You\'re about to make a reminder for $meds. First off, you gotta tell me what days you want to be reminded on.</string>
+    <string name="sched_add_content1">Turn this one on if you want to be reminded on repeat!</string>
+    <string name="sched_add_content2">What time do you want me to remind you to take $meds?</string>
+    <string name="sched_add_hint1">I need time!</string>
+    <string name="sched_add_content3">Now how much should you take $meds (in $meas)?</string>
+    <string name="sched_add_content4">All right! You\'re all set, just click the go button below and do what you normally do!</string>
+
+
+    <string name="sched_update_header">Hey there!</string>
+    <string name="sched_update_content">You\'re about to update a reminder for $meds. First off, you gotta tell me what days you want to be reminded on.</string>
+
+    <string name="name">Name:</string>
+    <string name="contact">Contact:</string>
+    <string name="remind">Remind Me:</string>
+    <string name="remind_5">5 Minutes Before</string>
+    <string name="remind_10">10 Minutes Before</string>
+    <string name="remind_15">15 Minutes Before</string>
+
+    <string-array name="measurements">
+        <item>kg</item>
+        <item>g</item>
+        <item>mg</item>
+        <item>mcg</item>
+        <item>L</item>
+        <item>ml</item>
+        <item>cc</item>
+        <item>mol</item>
+        <item>mmol</item>
+        <item>tab</item>
+        <item>caps</item>
+    </string-array>
+
+</resources>
